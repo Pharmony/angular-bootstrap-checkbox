@@ -3,6 +3,9 @@ angular-bootstrap-checkbox
 
 A checkbox for AngularJS styled to fit the Twitter Bootstrap standard design
 
+Forked by Pharmony team to be able to use with bootstrap 4 and fontawesome 4.7.
+Original library was using glyphicon which are not available anymore in bootstrap 4.
+
 Screenshot:
 
 ![Screenshot](/checkbox.png?raw=true "Screenshot")
