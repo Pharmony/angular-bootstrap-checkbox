@@ -19,22 +19,22 @@ angular.module("ui.checkbox", []).directive("checkbox", function() {
 				// Default Button Styling
 				scope.stylebtn = {};
 				// Default Checkmark Styling
-				scope.styleicon = {"width": "10px", "left": "-1px"};
+				scope.styleicon = {"width": "10px", "left": "-1px", "position": "relative"};
 				// If size is undefined, Checkbox has normal size (Bootstrap 'xs')
 				if(attrs.large !== undefined) {
 					scope.size = "large";
 					scope.stylebtn = {"padding-top": "2px", "padding-bottom": "2px", "height": "30px"};
-					scope.styleicon = {"width": "8px", "left": "-5px", "font-size": "17px"};
+					scope.styleicon = {"width": "8px", "left": "-5px", "font-size": "17px", "position": "relative"};
 				}
 				if(attrs.larger !== undefined) {
 					scope.size = "larger";
 					scope.stylebtn = {"padding-top": "2px", "padding-bottom": "2px", "height": "34px"};
-					scope.styleicon = {"width": "8px", "left": "-8px", "font-size": "22px"};
+					scope.styleicon = {"width": "8px", "left": "-7px", "font-size": "22px", "position": "relative"};
 				}
 				if(attrs.largest !== undefined) {
 					scope.size = "largest";
 					scope.stylebtn = {"padding-top": "2px", "padding-bottom": "2px", "height": "45px"};
-					scope.styleicon = {"width": "11px", "left": "-11px", "font-size": "30px"};
+					scope.styleicon = {"width": "11px", "left": "-11px", "font-size": "30px", "position": "relative"};
 				}
 				var indeterminate = false;
 				if(attrs.indeterminate === "true") {
